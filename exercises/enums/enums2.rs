@@ -1,5 +1,7 @@
 // enums2.rs
-// Make me compile! Scroll down for hints
+// Make me compile! Execute `rustlings hint enums2` for hints!
+
+// I AM NOT DONE
 
 #[derive(Debug)]
 enum Message {
@@ -14,48 +16,13 @@ impl Message {
 
 fn main() {
     let messages = [
-        Message::Move{ x: 10, y: 30 },
+        Message::Move { x: 10, y: 30 },
         Message::Echo(String::from("hello world")),
         Message::ChangeColor(200, 255, 255),
-        Message::Quit
+        Message::Quit,
     ];
 
     for message in &messages {
         message.call();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Hint: you can create enumerations that have different variants with different types
-// such as no data, anonymous structs, a single string, tuples, ...etc

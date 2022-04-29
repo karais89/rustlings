@@ -1,9 +1,15 @@
 // modules2.rs
-// Make me compile! Scroll down for hints :)
+// You can bring module paths into scopes and provide new names for them with the
+// 'use' and 'as' keywords. Fix these 'use' statements to make the code compile.
+// Make me compile! Execute `rustlings hint modules2` for hints :)
+
+// I AM NOT DONE
 
 mod delicious_snacks {
-    use self::fruits::PEAR as fruit;
-    use self::veggies::CUCUMBER as veggie;
+
+    // TODO: Fix these use statements
+    use self::fruits::PEAR as ???
+    use self::veggies::CUCUMBER as ???
 
     mod fruits {
         pub const PEAR: &'static str = "Pear";
@@ -23,25 +29,3 @@ fn main() {
         delicious_snacks::veggie
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// The delicious_snacks module is trying to present an external
-// interface (the `fruit` and `veggie` constants) that is different than
-// its internal structure (the `fruits` and `veggies` modules and
-// associated constants). It's almost there except for one keyword missing for
-// each constant.
